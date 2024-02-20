@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Main menu -->
+        <div id="main-menu" class="menu">
+            <h2>Main Menu</h2>
+            <button onclick="navigateTo('picking')">1 - Warehouse Picking</button>
+            <button onclick="navigateTo('inventory')">2 - Inventory Counts</button>
+            <button onclick="navigateTo('escalations')">3 - Escalations</button>
+        </div>
+
+        <!-- Sub-menus (initially hidden) -->
+        <div id="picking" class="menu hidden">
+            <h2>Warehouse Picking</h2>
+            <button onclick="alert('Picking...')">1 - Picking</button>
+            <button onclick="alert('Loading...')">2 - Loading</button>
+            <button onclick="goBack()">Go Back</button>
+        </div>
+
+        <div id="inventory" class="menu hidden">
+            <h2>Inventory Counts</h2>
+            <button onclick="alert('Cycle Count...')">1 - Cycle Count</button>
+            <button onclick="alert('Final Count...')">2 - Final Count</button>
+            <button onclick="goBack()">Go Back</button>
+        </div>
+
+        <div id="escalations" class="menu hidden">
+            <h2>Escalations</h2>
+            <button onclick="alert('Safety...')">1 - Safety</button>
+            <button onclick="alert('Quality...')">2 - Quality</button>
+            <button onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
